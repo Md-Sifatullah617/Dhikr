@@ -42,6 +42,9 @@ flutter_gen:
   line_length: 80
   integrations:
     flutter_svg: false
+  colors:
+    inputs:
+      - assets/colors/colors.xml
 
 flutter:
   uses-material-design: true

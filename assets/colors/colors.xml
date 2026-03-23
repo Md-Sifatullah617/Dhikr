@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Legacy / kept for theme compat -->
+    <color name="background">#1B3A4B</color>
+    <color name="surface">#1A1A1A</color>
+    <color name="ringTrack">#2D5266</color>
+    <color name="buttonBg">#2D5266</color>
+
+    <!-- New dark screen palette -->
+    <color name="screenBg">#0A0A0A</color>
+    <color name="circleBg">#141414</color>
+    <color name="circleInner">#0D0D0D</color>
+    <color name="backButtonBg">#1C1C1C</color>
+    <color name="voiceButtonBg">#1C2814</color>
+    <color name="liveGreen">#4CAF50</color>
+
+    <!-- Accents -->
+    <color name="accent">#D4AF37</color>
+    <color name="accentLight">#E8C96A</color>
+
+    <!-- Text -->
+    <color name="textPrimary">#FFFFFF</color>
+    <color name="textSecondary">#6B6B6B</color>
+</resources>

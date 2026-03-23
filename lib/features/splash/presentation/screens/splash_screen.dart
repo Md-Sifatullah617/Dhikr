@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../gen/assets.gen.dart';
+import '../../../../gen/colors.gen.dart';
 import '../../../dhikr/presentation/screens/dhikr_counter_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -47,15 +48,13 @@ class _SplashScreenState extends State<SplashScreen>
       curve: const Interval(0.4, 1.0, curve: Curves.easeIn),
     );
 
-    _textSlide = Tween<Offset>(
-      begin: const Offset(0, 0.4),
-      end: Offset.zero,
-    ).animate(
-      CurvedAnimation(
-        parent: _controller,
-        curve: const Interval(0.4, 1.0, curve: Curves.easeOut),
-      ),
-    );
+    _textSlide = Tween<Offset>(begin: const Offset(0, 0.4), end: Offset.zero)
+        .animate(
+          CurvedAnimation(
+            parent: _controller,
+            curve: const Interval(0.4, 1.0, curve: Curves.easeOut),
+          ),
+        );
 
     _controller.forward();
 
@@ -78,23 +77,22 @@ class _SplashScreenState extends State<SplashScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF1B3A4B),
+      backgroundColor: ColorName.screenBg,
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: .center,
           children: [
             ScaleTransition(
               scale: _logoScale,
               child: FadeTransition(
                 opacity: _logoFade,
                 child: Assets.images.shpperLogoWithYellow.image(
-                  width: 120.r,
-                  height: 120.r,
+                  width: 200.w,
+                  height: 150.h,
                   fit: BoxFit.contain,
                 ),
               ),
             ),
-            SizedBox(height: 24.h),
             SlideTransition(
               position: _textSlide,
               child: FadeTransition(
@@ -102,7 +100,7 @@ class _SplashScreenState extends State<SplashScreen>
                 child: Text(
                   'Dhikr',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: ColorName.textPrimary,
                     fontSize: 32.sp,
                     fontWeight: FontWeight.bold,
                     letterSpacing: 2,

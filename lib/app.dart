@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import 'core/theme/app_theme.dart';
 import 'features/splash/presentation/screens/splash_screen.dart';
 
-class App extends StatelessWidget {
-  const App({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,10 +17,7 @@ class App extends StatelessWidget {
         return MaterialApp(
           title: 'Dhikr',
           debugShowCheckedModeBanner: false,
-          theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF1B3A4B)),
-            useMaterial3: true,
-          ),
+          theme: AppTheme.dark,
           home: const SplashScreen(),
         );
       },
