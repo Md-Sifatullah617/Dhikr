@@ -18,12 +18,8 @@ A beautiful, minimalist Islamic Dhikr counter application built with Flutter. Tr
 ### Watch Demo
 
 <div align="center">
-  <a href="https://drive.google.com/file/d/1c7DWWtc6AoaHMBfWxswRCOkLi0cdoIw3/view?usp=sharing" target="_blank">
-    <video src="Simulator Screen Recording - iPhone 17 Pro Max - 2026-03-24 at 23.47.55.mov" controls width="320" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
-      Your browser does not support the video tag.
-    </video>
-  </a>
-  <br>
+  <video src="./Simulator Screen Recording - iPhone 17 Pro Max - 2026-03-24 at 23.47.55.mov" controls width="640" style="max-width: 100%; border-radius: 12px;"/>
+  <br/>
   <p>
     <a href="https://drive.google.com/file/d/1c7DWWtc6AoaHMBfWxswRCOkLi0cdoIw3/view?usp=sharing" target="_blank">
       <img src="https://img.shields.io/badge/📥-Download%20Video-red?style=for-the-badge" alt="Download Video">
