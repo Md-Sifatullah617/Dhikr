@@ -17,9 +17,9 @@ A beautiful, minimalist Islamic Dhikr counter application built with Flutter. Tr
 
 ### Watch Demo
 
+https://github.com/user-attachments/assets/ea2f836a-cad8-4408-b4f5-1982a07f9b90
+
 <div align="center">
-  https://github.com/user-attachments/assets/ea2f836a-cad8-4408-b4f5-1982a07f9b90
-  <br/>
   <p>
     <a href="https://drive.google.com/file/d/1c7DWWtc6AoaHMBfWxswRCOkLi0cdoIw3/view?usp=sharing" target="_blank">
       <img src="https://img.shields.io/badge/📥-Download%20Video-red?style=for-the-badge" alt="Download Video">
