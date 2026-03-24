@@ -49,7 +49,9 @@ class _DhikrCircleState extends ConsumerState<DhikrCircle>
 
   @override
   Widget build(BuildContext context) {
-    final state = ref.watch(dhikrCounterProvider);
+    final currentCount = ref.watch(
+      dhikrCounterProvider.select((s) => s.currentCount),
+    );
 
     return GestureDetector(
       onTap: _handleTap,
@@ -61,23 +63,6 @@ class _DhikrCircleState extends ConsumerState<DhikrCircle>
           child: Stack(
             alignment: Alignment.center,
             children: [
-              // Radial gold glow behind the circle
-              // Container(
-              //   width: 0.75.sw,
-              //   height: 0.75.sw,
-              //   decoration: BoxDecoration(
-              //     shape: BoxShape.circle,
-              //     gradient: RadialGradient(
-              //       colors: [
-              //         ColorName.accent.withValues(alpha: 0.22),
-              //         ColorName.accent.withValues(alpha: 0.06),
-              //         Colors.transparent,
-              //       ],
-              //       stops: const [0.0, 0.5, 1.0],
-              //     ),
-              //   ),
-              // ),
-
               // Outer ring with subtle gold border
               Container(
                 width: 0.7.sw,
@@ -158,7 +143,7 @@ class _DhikrCircleState extends ConsumerState<DhikrCircle>
 
                     // Count
                     Text(
-                      '${state.currentCount}',
+                      '$currentCount',
                       style: TextStyle(
                         color: ColorName.textPrimary,
                         fontSize: 48.sp,

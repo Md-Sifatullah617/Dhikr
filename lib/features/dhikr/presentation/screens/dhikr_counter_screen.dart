@@ -161,12 +161,12 @@ class _DhikrCounterScreenState extends ConsumerState<DhikrCounterScreen> {
 
                 const Spacer(),
 
-                // ── TAP TO RECITE ─────────────────────────────────────────
-                AnimatedOpacity(
-                  opacity: isVoice ? 0.0 : 1.0,
+                // ── TAP / SPEAK TO RECITE ─────────────────────────────────
+                AnimatedSwitcher(
                   duration: const Duration(milliseconds: 300),
                   child: Text(
-                    'TAP TO RECITE',
+                    isVoice ? 'SPEAK TO RECITE' : 'TAP TO RECITE',
+                    key: ValueKey(isVoice),
                     style: TextStyle(
                       color: ColorName.accent.withValues(alpha: 0.7),
                       fontSize: 12.sp,
